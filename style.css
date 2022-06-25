@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-family: Raleway;
+}
+
+body{
+    background-color: #efefef;
+}
+
+
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header > nav > label{
+    font-size: 1.5rem;
+    color: orangered;
+}
+
+header > nav > p{
+    color: #575757;
+    cursor: pointer;
+}
+
+.search{
+    background: url(imagens/london.jpg);
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+}
+
+.options > button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.options > button:nth-child(1){
+    background-color: #f23c37;
+}
+
+
+.search > form{
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+
+.search > form > h1{
+    margin: 16px 0;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fields > input{
+    height: 2rem;
+    outline: none;
+    padding: 0 8px;
+    width: 95%;
+}
+
+.search > form > button{
+    height: 2rem;
+    background-color: gray;
+    color: white;
+    width: 25%;
+    border: none;
+    outline: none;
+    margin-top: 12px;
+    cursor: pointer;
+
+}
+
+section{
+    padding: 0 100px;
+    margin-top: 24px;
+}
+
+
+.pictures{
+    display: grid;
+    grid-template-rows: 303px 303px;
+    grid-template-columns: 5fr 2.5fr 2.5fr;
+    grid-template-areas:
+    "pic_s pic_New pic_San"
+    "pic_s pic_Pis pic_Paris"
+    ;
+    gap: 10px;
+}
+
+.pic_S{
+    grid-area: pic_s;
+    position: relative;
+}
+
+.pic_New{
+    grid-area: pic_New;
+    position: relative;
+}
+
+
+.pic_San{
+    grid-area: pic_San;
+    position: relative;
+}
+
+.pic_Pis{
+    grid-area: pic_Pis;
+    position: relative;
+}
+
+.pic_Paris{
+    grid-area: pic_Paris;
+    position: relative;
+}
+
+.pic_S > img,
+.pic_Paris > img,
+.pic_New > img,
+.pic_Pis > img,
+.pic_San > img{
+    width: 100%;
+    height: 100%;
+}
+
+.pic_S > p,
+.pic_New > p,
+.pic_Pis > p,
+.pic_Paris > p,
+.pic_San > p{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    z-index: 1;
+    color: white;
+    
+}
+
+
+.nature{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 10px;
+    grid-template-areas:
+    "card_1 card_2";
+}
+
+.card_1{
+    grid-area: card_1;
+    background-color: white;
+}
+
+
+.card_2{
+    grid-area: card_2;
+    background-color: white;
+}
+
+.card_1 > img, .card_2 > img{
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    padding: 24px 12px;
+    background-color: white;
+    margin-top: -10px;
+}
+
+.info > p:nth-child(2){
+    color: rgba(112, 106, 106, 0.849);
+}
+
+.info > p,
+.info > a{
+    margin: 14px 0;
+}
+
+.info > a{
+    margin-left: 12px;
+    color: black;
+
+}
+
+section:nth-child(4){
+    margin-top: 180px;
+}
+
+.offers{
+    background-color: #575757;
+    padding: 14px 24px;
+
+}
+
+.offers > h2, .offers > p{
+    color: white;
+    margin: 10px 0;
+}
+
+.offers > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.offers > form > p{
+    color: white;
+}
+
+.offers > form > input{
+    height: 2rem;
+    padding: 0 8px;
+}
+
+.offers > form > button{
+    background-color: #f17f7a;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    width: 150px;
+    height: 2rem;
+    margin-top: 18px;
+}
+
+.contact > h2{
+    margin: 18px 0;
+}
+
+.contact > p:nth-child(2){
+    margin: 18px 0;
+}
+.contact > p:nth-child(5){
+    margin-bottom: 18px;
+}
+
+.contact > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact > form > input{
+    height: 2.5rem;
+    padding: 0 8px;
+    margin: 6px 0;
+}
+
+.contact > form > button{
+    background-color: black;
+    color: white;
+    width: 200px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 2rem;
+    margin: 4px 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > p{
+    margin: 12px 0;
+}
+
+.social_network{
+    margin: 24px 0;
+}
+
+.social_network > i{
+    font-size: 1.5rem;
+}
