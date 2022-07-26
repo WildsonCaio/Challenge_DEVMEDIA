@@ -157,6 +157,7 @@ section{
 .pic_San > img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .pic_S > p,
